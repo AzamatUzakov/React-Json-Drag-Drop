@@ -46,9 +46,9 @@ export const Column: React.FC<ColumnProps> = ({
 			.then(() => {
 				setTasks((prevTasks) => [activeTask, ...prevTasks]);
 			})
-			.catch((err) => {
-				console.error("Ошибка при обновлении задачи:", err);
-				setTasks((prevTasks) => [activeTask, ...prevTasks]);
+					.catch((err) => {
+						console.error("Ошибка при обновлении задачи:", err);
+						setTasks((prevTasks) => [activeTask, ...prevTasks]);
 			});
 	};
 
